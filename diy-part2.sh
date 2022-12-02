@@ -35,10 +35,10 @@
 # echo '=========Alert kernel to 5.4.latest OK!========='
 
 
-echo '修改主机名'
-sed -i "s/hostname='OpenWrt'/hostname='Phicomm-K3'/g" package/base-files/files/bin/config_generate
-cat package/base-files/files/bin/config_generate |grep hostname=
-echo '=========Alert hostname OK!========='
+#echo '修改主机名'
+#sed -i "s/hostname='OpenWrt'/hostname='Phicomm-K3'/g" package/base-files/files/bin/config_generate
+#cat package/base-files/files/bin/config_generate |grep hostname=
+#echo '=========Alert hostname OK!========='
 
 echo '移除主页跑分信息显示'
 sed -i 's/ <%=luci.sys.exec("cat \/etc\/bench.log") or ""%>//g' package/lean/autocore/files/arm/index.htm
